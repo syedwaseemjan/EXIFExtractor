@@ -34,7 +34,7 @@ The following assumes you have all of the recommended tools listed above install
     $ source exif_extractor/bin/activate
     $ pip install -r requirements.py
 
-    I am using [Pillow](https://pillow.readthedocs.io/en/3.1.x) for extracting exif information from images. If you find any issue during its installation try upgrading your pip. (That worked for me atleast)
+    I am using Pillow for extracting exif information from images. If you find any issue during its installation try upgrading your pip. (That worked for me atleast)
     $ pip install --upgrade pip
 
 
