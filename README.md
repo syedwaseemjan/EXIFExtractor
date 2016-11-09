@@ -1,5 +1,5 @@
 # EXIFExtractor
-Python application to download images from S3, extract exif information from each picture and store it to sqlite DB. What is EXIF? See here http://www.howtogeek.com/203592/what-is-exif-data-and-how-to-remove-it/
+Python application to download images from S3, extract exif information from each picture and store it to sqlite DB. What is EXIF? See [here](http://www.howtogeek.com/203592/what-is-exif-data-and-how-to-remove-it)
 
 ## Concept
 
