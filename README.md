@@ -3,7 +3,7 @@ Python application to download images from S3, extract exif information from eac
 
 ## Concept
 
-Boto library is used for handling interaction with S3. After listing all files in the bucket, celery background task is responsible for downloading and processing each individual image. I am using Pillow for extracting the exif information from image. Sqlite DB is used for storing image data. EXIF information is stored as serialized dictionary in DB.
+Boto library is used for handling interaction with S3. After listing all files in the bucket, celery background task is responsible for downloading and processing each individual image. I am using [Pillow](https://pillow.readthedocs.io/en/3.1.x) for extracting the exif information from image. Sqlite DB is used for storing image data. EXIF information is stored as serialized dictionary in DB.
 
 RabbitMq task queue is used with celery for queueing tasks. Celery gives some other options like redis too. Please look at celery docs for that.
 
@@ -34,7 +34,7 @@ The following assumes you have all of the recommended tools listed above install
     $ source exif_extractor/bin/activate
     $ pip install -r requirements.py
 
-    I am using Pillow for extracting exif information from images. If you find any issue during its installation try upgrading your pip. (That worked for me atleast)
+    I am using [Pillow](https://pillow.readthedocs.io/en/3.1.x) for extracting exif information from images. If you find any issue during its installation try upgrading your pip. (That worked for me atleast)
     $ pip install --upgrade pip
 
 
