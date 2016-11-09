@@ -46,6 +46,10 @@ The following assumes you have all of the recommended tools listed above install
 
     $ python app.py
 
+    Default bucket is "waldo-recruiting" but you can use any other. Use
+
+    $ python app.py <Your-Bucket-Name>
+
 ### References:
 1. https://gist.github.com/alwaysunday/db0b32f5ce0538afbb75ccf143adf116
 2. http://stackoverflow.com/a/1254499/818731 (For strings decoding. Some of the extracted information consists of some special characters.)
