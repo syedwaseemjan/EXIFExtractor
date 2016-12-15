@@ -24,7 +24,7 @@ The following assumes you have all of the recommended tools listed above install
 
 #### 1. Clone the project:
 
-    $ git clone git@github.com/syedwaseemjan/EXIFExtractor.git
+    $ git clone git@github.com:syedwaseemjan/EXIFExtractor.git
     $ cd EXIFExtractor
 
 #### 2. Create and initialize virtualenv for the project:
