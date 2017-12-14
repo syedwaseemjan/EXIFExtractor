@@ -1,8 +1,6 @@
 import cStringIO
 import json
 import logging
-import collections
-import sqlite3
 import boto3
 import botocore
 from tqdm import tqdm
@@ -27,7 +25,6 @@ def process_image(id, name):
         total_size = float(obj.get()['ContentLength'])
         pbar = tqdm(total=total_size, unit='B',
                     unit_scale=True, unit_divisor=1024)
-        seen_so_far = [0]
 
         def progress(bytes_amount):
             pbar.update(bytes_amount)
