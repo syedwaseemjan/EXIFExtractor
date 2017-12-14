@@ -37,12 +37,15 @@ The following assumes you have all of the recommended tools listed above install
     I am using Pillow for extracting exif information from images. If you find any issue during its installation try upgrading your pip. (That worked for me atleast)
     $ pip install --upgrade pip
 
+#### 3. To run unit tests:
 
-#### 3. Run the celery background task:
+    $ python -m unittest tests.server_test
 
-    $ celery -A tasks worker --loglevel=info
+#### 4. Run the celery background task:
 
-#### 4. Run the application:
+    $ celery -A app.tasks worker --loglevel=info -f server.log &
+
+#### 5. Run the application:
 
     $ python app.py
 
@@ -52,4 +55,3 @@ The following assumes you have all of the recommended tools listed above install
 
 ### References:
 1. https://gist.github.com/alwaysunday/db0b32f5ce0538afbb75ccf143adf116
-2. http://stackoverflow.com/a/1254499/818731 (For strings decoding. Some of the extracted information consists of some special characters.)
